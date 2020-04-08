@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML2 classwork</title>
+</head>
+
+<body>
+    <h1>Media testing</h1>
+    <p>Nuotrauka, video, garsas, youtube, zemelapiai</p>
+    <hr>
+    <table border="1">
+        <tr>
+            <th>Juokelis</th>
+            <th>Kate</th>
+            <th colspan="2">Kate <!--tiesiog testui--> </th>
+            <!-- <th>Toilet paper</th> -->
+            <th rowspan="2">Lempa</th>
+        </tr>
+        <tr>
+
+            <td>
+                <img src="../1HTML1/foto.jpg" alt="Meme programmer joke" title="Meme programmer joke" width="200">
+                <p><small>Nuotrauka</small></p>
+            </td>
+
+            <td>
+                <!-- figcaption -->
+                <figure>
+                    <img src="./cat.png" alt="Kate" title="Kate" width="200">
+                    <figcaption>Nuotrauka</figcaption>
+                </figure>
+            </td>
+
+            <td>
+                <figure>
+                    <img src="assets/images/cat.png" alt="Kate" title="Kate" width="200">
+                    <figcaption>Nuotrauka</figcaption>
+                </figure>
+            </td>
+
+            <td>
+                <img src="https://cdn.pixabay.com/photo/2020/03/27/17/03/shopping-4974313__340.jpg" alt="Toilet paper" title="Toilet paper" width="200">
+            </td>
+        </tr>
+
+    </table>
+    <!-- sukurti lentele, 2 eilutes, 4 stulpelius. Pirmosios eilutes stulpeliai yra <th>. Ijunkite lentelei remelius -->
+    <br>
+    <br>
+    <br>
+
+    <table border="1">
+
+        <tr>
+            <th>Video is kompiuterio</th>
+            <th>Video is interneto</th>
+            <th>Audio is kompiuterio</th>
+            <th>Google zemelapis</th>
+        </tr>
+
+        <tr>
+            <td>
+                <video src="assets/video/video.ogg" width="200" controls></video>
+            </td>
+
+            <td>
+                <iframe width="200" src="https://www.youtube.com/embed/a9WowBxdhTQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </td>
+
+            <td>
+                <audio src="assets/audio/audio.mp3" controls></audio>
+            </td>
+
+            <td>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2306.062767954311!2d25.212671315442623!3d54.690923080849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd93bf6e6d21ab%3A0x2a0ba18bdb0e3449!2sTelevizijos%20bok%C5%A1tas!5e0!3m2!1slt!2slt!4v1586107831212!5m2!1slt!2slt" width="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </td>
+        </tr>
+
+    </table>
+    <br>
+    <br>
+    <br>
+<!-- <p> -->
+    <form>
+        <fieldset>
+            <legend>Asmenine informacija</legend>
+            <label for="vardas">Vardas</label>
+            <input type="text" id="vardas" placeholder="Iveskite savo varda">
+
+            <label for="pavarde">Pavarde</label>
+            <input type="text" id="pavarde" placeholder="Iveskite savo pavarde">
+
+            <input type="email" placeholder="Iveskite el pasto adresa" required>
+
+            <input type="password" placeholder="Iveskite slaptazodi" required>
+
+            <input type="text" value="2020-04-04" readonly>
+
+            <input type="date">
+
+            <input type="radio" id="vyras" name="lytis" value="vyras">
+            <label for="vyras">Vyras</label>
+
+            <input type="radio" id="moteris" name="lytis" value="moteris">
+            <label for="moteris">Moteris</label>
+
+            <input type="radio" id="nenurodysiu" name="lytis" value="nenurodysiu">
+            <label for="nenurodysiu">Nenurodysiu</label>
+
+            <input type="checkbox" id="plaukimas" name="plaukimas">
+            <label for="plaukimas">Plaukimas</label>
+
+            <input type="checkbox" id="gulejimas" name="gulejimas">
+            <label for="gulejimas">Gulejimas</label>
+
+            <input type="checkbox" id="valgymas" name="valgymas">
+            <label for="valgymas">Valgymas</label>
+
+        </fieldset>
+        <fieldset>
+            <legend>Vietove</legend>
+            <select>
+                <option>--Pasirinkite miesta--</option>
+                <option>Vilnius</option>
+                <option>Kaunas</option>
+                <option>Klaipeda</option>
+            </select>
+        </fieldset>
+
+        <input type="submit" value="Siusti">
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <table>
+            <tr>
+                <td>
+                    <fieldset>
+                            <legend>Asmenine informacija</legend>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <label for="vardas">Vardas</label>
+                                        <input type="text" id="vardas" placeholder="Iveskite savo varda">
+                                    </td>
+                                    <td>
+                                        <label for="pavarde">Pavarde</label>
+                                        <input type="text" id="pavarde" placeholder="Iveskite savo pavarde">
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                       <input type="radio" id="vyras" name="lytis" value="vyras">
+                                        <label for="vyras">Vyras</label>
+
+                                        <input type="radio" id="moteris" name="lytis" value="moteris">
+                                        <label for="moteris">Moteris</label>
+                                    </td>
+                                </tr>
+                            </table>
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset>
+                        <legend>Gyvenamoji vieta</legend>
+                        <table>
+                            <tr>
+                                <td>
+                                    <select>
+                                        <option>--Pasirinkite miesta--</option>
+                                        <option>Vilnius</option>
+                                        <option>Kaunas</option>
+                                        <option>Klaipeda</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset>
+                    <legend>Pomegiai</legend>
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="radio" id="nenurodysiu" name="lytis" value="nenurodysiu">
+                                    <label for="nenurodysiu">Nenurodysiu</label>
+
+                                    <input type="checkbox" id="plaukimas" name="plaukimas">
+                                    <label for="plaukimas">Plaukimas</label>
+
+                                    <input type="checkbox" id="gulejimas" name="gulejimas">
+                                    <label for="gulejimas">Gulejimas</label>
+
+                                    <input type="checkbox" id="valgymas" name="valgymas">
+                                    <label for="valgymas">Valgymas</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Prisijungimo duomenys</legend>
+                        <table>
+                            <tr>
+                                <td><input type="email" placeholder="Iveskite el pasto adresa" required></td>
+                                <td><input type="date" required></td>
+                            </tr>
+                            <tr>
+                                <td><input type="password" placeholder="Iveskite slaptazodi" required></td>
+                            </tr>
+                            <tr>
+                                <td><input type="password" placeholder="Pakartokite slaptazodi" required></td>
+                            </tr>
+                            <tr>
+                                <td><input type="submit" value="Siusti"></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+
+    </form>
+<!-- </p> -->
+</body>
+</html>
+
